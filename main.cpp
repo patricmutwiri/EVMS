@@ -5,6 +5,7 @@ using namespace std;
 
 class Voter {
     long voter_id, id_number;
+    int d,m,y;
     char gender;
     string fname, mname, lname, surname, dob, polling_station;
     public:
@@ -28,8 +29,13 @@ class Voter {
         cin>>lname;
         cout<<"\nEnter surname \t: ";
         cin>>surname;
-        cout<<"\nEnter date of birth in format DD-MM-YYYY \t: ";
-        cin>>dob;
+        cout<<"\nEnter day of month you were born \t: ";
+        cin>>d;
+        cout<<"\nEnter month of year you were born \t: ";
+        cin>>m;
+        cout<<"\nEnter the year were born \t: ";
+        cin>>y;
+        //cin>>dob;
         cout<<"\nEnter polling station \t: ";
         cin.ignore();
         getline(cin, polling_station);
@@ -39,7 +45,7 @@ class Voter {
         cout<<"\nVoter ID \t: "<<voter_id;
         cout<<"\nNational ID \t: "<<id_number;
         cout<<"\nFull Name \t: "<<surname<<" "<<fname<<" "<<mname<<" "<<lname;
-        cout<<"\nVoter DOB \t: "<<dob;
+        cout<<"\nVoter DOB \t: "<<d<<" "<<m<<" "<<y;
         cout<<"\nPolling station \t: "<<polling_station;
     }
 };
