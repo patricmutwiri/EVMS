@@ -45,7 +45,7 @@ class Voter {
         cout<<"\nVoter ID \t: "<<voter_id;
         cout<<"\nNational ID \t: "<<id_number;
         cout<<"\nFull Name \t: "<<surname<<" "<<fname<<" "<<mname<<" "<<lname;
-        cout<<"\nVoter DOB \t: "<<d<<" "<<m<<" "<<y;
+        cout<<"\nVoter DOB \t: "<<d<<"-"<<m<<"-"<<y;
         cout<<"\nPolling station \t: "<<polling_station;
     }
 };
